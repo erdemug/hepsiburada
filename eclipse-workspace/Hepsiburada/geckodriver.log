@@ -1,0 +1,78 @@
+1538427054469	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Ugurcan\\AppData\\Local\\Temp\\rust_mozprofile.jMnoauzEdj7z"
+1538427055679	Marionette	INFO	Listening on port 63538
+1538427056078	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538427056129	Marionette	DEBUG	[6442450945] Frame script loaded
+1538427056130	Marionette	DEBUG	[6442450945] Frame script registered
+1538427056146	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1538427056470	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1538427058023	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.hepsiburada.com/
+JavaScript warning: https://images.hepsiburada.net/insider-sociaplus/8/partner.js, line 790: unreachable code after return statement
+1538427061382	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.hepsiburada.com/
+1538427066656	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1538427068675	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://www.hepsiburada.com/
+1538427073876	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1538427087238	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+JavaScript warning: https://images.hepsiburada.net/insider-sociaplus/8/partner.js, line 790: unreachable code after return statement
+1538427099513	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://www.hepsiburada.com/
+1538427100405	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://www.hepsiburada.com/
+1538427100406	Marionette	DEBUG	[6442450945] Received DOM event unload for https://www.hepsiburada.com/
+1538427100755	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.hepsiburada.com/ara?q=iphone+7+kilif
+1538427101222	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450966
+1538427101222	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450968
+1538427101222	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450970
+1538427101222	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450974
+1538427103868	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.hepsiburada.com/ara?q=iphone+7+kilif
+JavaScript warning: https://images.hepsiburada.net/insider-sociaplus/8/partner.js, line 790: unreachable code after return statement
+[Child 8440, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8440, Chrome_ChildThread] WARNING: pipe err1538427106778	Marionette	DEBUG	[2147483652] Frame script loaded
+1538427106779	Marionette	DEBUG	[2147483652] Frame script registered
+1538427107859	Marionette	DEBUG	[8589934593] Frame script loaded
+1538427107860	Marionette	DEBUG	[8589934593] Frame script registered
+[Child 17780, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17780, Chrome_ChildThrea[Parent 10836, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4952, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4952, Chrome_Child1538427108729	Marionette	INFO	Stopped listening on port 63538
+[GPU 13388, Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1538427203924	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Ugurcan\\AppData\\Local\\Temp\\rust_mozprofile.GFoppoyIW1NM"
+1538427205080	Marionette	INFO	Listening on port 63901
+1538427205535	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538427205584	Marionette	DEBUG	[6442450945] Frame script loaded
+1538427205586	Marionette	DEBUG	[6442450945] Frame script registered
+1538427205600	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1538427205866	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1538427207703	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.hepsiburada.com/
+JavaScript warning: https://images.hepsiburada.net/insider-sociaplus/8/partner.js, line 790: unreachable code after return statement
+1538427213053	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.hepsiburada.com/
+[Parent 16848, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11424, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11424, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_cha[Child 18740, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18740, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 16848, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15548, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15548, Ch1538427214224	Marionette	INFO	Stopped listening on port 63901
+[GPU 19488,
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1538427451988	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Ugurcan\\AppData\\Local\\Temp\\rust_mozprofile.AhdZImlz8uTm"
+1538427453192	Marionette	INFO	Listening on port 64391
+1538427453598	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538427453645	Marionette	DEBUG	[6442450945] Frame script loaded
+1538427453646	Marionette	DEBUG	[6442450945] Frame script registered
+1538427453660	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1538427453929	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1538427455920	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.hepsiburada.com/
+JavaScript warning: https://images.hepsiburada.net/insider-sociaplus/8/partner.js, line 790: unreachable code after return statement
+1538427458994	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.hepsiburada.com/
+1538427464281	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+[Parent 3524, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 3524, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18436, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18924, Chrome_ChildThread] WARNING[Child 18436, Chrome_ChildThread] WAR: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18924, Chrome_ChildThrea[Parent 3524, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14512, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14512, C1538427521427	Marionette	INFO	Stopped listening on port 64391
+[GPU 16504, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
