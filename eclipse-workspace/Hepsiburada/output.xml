@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181002 00:17:37.203">
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181002 22:59:48.183">
 <suite id="s1" name="Hepsiburada" source="C:\eclipse-workspace\Hepsiburada">
 <suite id="s1-s1" name="HepsiburadaTestSuite" source="C:\eclipse-workspace\Hepsiburada\HepsiburadaTestSuite.robot">
 <kw name="Set Browser Environment Variable" type="setup">
@@ -15,17 +15,17 @@
 <assign>
 <var>${date}</var>
 </assign>
-<msg timestamp="20181002 00:17:37.377" level="INFO">${date} = 02-10-2018 00-17</msg>
-<status status="PASS" starttime="20181002 00:17:37.377" endtime="20181002 00:17:37.377"></status>
+<msg timestamp="20181002 22:59:48.343" level="INFO">${date} = 02-10-2018 22-59</msg>
+<status status="PASS" starttime="20181002 22:59:48.342" endtime="20181002 22:59:48.343"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${outputdir}</arg>
-<arg>C:/eclipse-workspace/Hepsiburada/${date}</arg>
+<arg>${EXECDIR}/${date}</arg>
 </arguments>
-<msg timestamp="20181002 00:17:37.378" level="INFO">${outputdir} = C:/eclipse-workspace/Hepsiburada/02-10-2018 00-17</msg>
-<status status="PASS" starttime="20181002 00:17:37.377" endtime="20181002 00:17:37.378"></status>
+<msg timestamp="20181002 22:59:48.343" level="INFO">${outputdir} = C:\eclipse-workspace\Hepsiburada/02-10-2018 22-59</msg>
+<status status="PASS" starttime="20181002 22:59:48.343" endtime="20181002 22:59:48.343"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -35,7 +35,7 @@
 <arg>${driverdir}</arg>
 <arg>geckodriver.exe</arg>
 </arguments>
-<status status="PASS" starttime="20181002 00:17:37.378" endtime="20181002 00:17:37.378"></status>
+<status status="PASS" starttime="20181002 22:59:48.344" endtime="20181002 22:59:48.344"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -51,28 +51,28 @@
 <arg>${driverdir}</arg>
 <arg>chromedriver.exe</arg>
 </arguments>
-<msg timestamp="20181002 00:17:37.379" level="INFO">${driverdir} = chromedriver.exe</msg>
-<status status="PASS" starttime="20181002 00:17:37.379" endtime="20181002 00:17:37.379"></status>
+<msg timestamp="20181002 22:59:48.345" level="INFO">${driverdir} = chromedriver.exe</msg>
+<status status="PASS" starttime="20181002 22:59:48.344" endtime="20181002 22:59:48.345"></status>
 </kw>
-<status status="PASS" starttime="20181002 00:17:37.378" endtime="20181002 00:17:37.379"></status>
+<status status="PASS" starttime="20181002 22:59:48.344" endtime="20181002 22:59:48.345"></status>
 </kw>
 <kw name="Set Environment Variable" library="OperatingSystem">
 <doc>Sets an environment variable to a specified value.</doc>
 <arguments>
 <arg>webdriver.${browser}.driver</arg>
-<arg>C:/eclipse-workspace/Hepsiburada/${driverdir}</arg>
+<arg>${EXECDIR}/${driverdir}</arg>
 </arguments>
-<msg timestamp="20181002 00:17:37.380" level="INFO">Environment variable 'webdriver.chrome.driver' set to value 'C:/eclipse-workspace/Hepsiburada/chromedriver.exe'.</msg>
-<status status="PASS" starttime="20181002 00:17:37.379" endtime="20181002 00:17:37.380"></status>
+<msg timestamp="20181002 22:59:48.345" level="INFO">Environment variable 'webdriver.chrome.driver' set to value 'C:\eclipse-workspace\Hepsiburada/chromedriver.exe'.</msg>
+<status status="PASS" starttime="20181002 22:59:48.345" endtime="20181002 22:59:48.346"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>1 second</arg>
 </arguments>
-<status status="PASS" starttime="20181002 00:17:37.380" endtime="20181002 00:17:37.380"></status>
+<status status="PASS" starttime="20181002 22:59:48.346" endtime="20181002 22:59:48.346"></status>
 </kw>
-<status status="PASS" starttime="20181002 00:17:37.376" endtime="20181002 00:17:37.381"></status>
+<status status="PASS" starttime="20181002 22:59:48.342" endtime="20181002 22:59:48.346"></status>
 </kw>
 <test id="s1-s1-t1" name="Test Case 1">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -81,387 +81,53 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20181002 00:17:37.382" level="INFO">Opening browser 'chrome' to base url 'https://www.hepsiburada.com/'.</msg>
-<status status="PASS" starttime="20181002 00:17:37.381" endtime="20181002 00:17:48.930"></status>
+<msg timestamp="20181002 22:59:48.347" level="INFO">Opening browser 'chrome' to base url 'https://www.hepsiburada.com/'.</msg>
+<status status="PASS" starttime="20181002 22:59:48.347" endtime="20181002 22:59:55.844"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20181002 00:17:48.930" endtime="20181002 00:17:51.044"></status>
+<status status="PASS" starttime="20181002 22:59:55.844" endtime="20181002 22:59:57.959"></status>
 </kw>
+<kw name="Login">
+<doc>Login yapilacak email adresi, HB hesabi sifresi ve login check yapilabilmesi icin kullanici ismi istenmektedir.</doc>
+<arguments>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<arg>${user_fullname}</arg>
+</arguments>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
 <arguments>
 <arg>//*[@id="myAccount"]</arg>
 </arguments>
-<msg timestamp="20181002 00:17:53.101" level="INFO">Element '//*[@id="myAccount"]' is displayed.</msg>
-<status status="PASS" starttime="20181002 00:17:51.045" endtime="20181002 00:17:53.101"></status>
+<msg timestamp="20181002 23:00:00.009" level="INFO">Element '//*[@id="myAccount"]' is displayed.</msg>
+<status status="PASS" starttime="20181002 22:59:57.962" endtime="20181002 23:00:00.009"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="myAccount"]</arg>
 </arguments>
-<msg timestamp="20181002 00:17:53.102" level="INFO">Clicking element '//*[@id="myAccount"]'.</msg>
-<status status="PASS" starttime="20181002 00:17:53.102" endtime="20181002 00:17:55.162"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="login"]</arg>
-</arguments>
-<msg timestamp="20181002 00:17:55.163" level="INFO">Clicking element '//*[@id="login"]'.</msg>
-<status status="PASS" starttime="20181002 00:17:55.162" endtime="20181002 00:17:58.664"></status>
-</kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<arguments>
-<arg>//*[@id="form-login"]/div[4]/button</arg>
-</arguments>
-<msg timestamp="20181002 00:18:00.692" level="INFO">Element '//*[@id="form-login"]/div[4]/button' is displayed.</msg>
-<status status="PASS" starttime="20181002 00:17:58.664" endtime="20181002 00:18:00.692"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="email"]</arg>
-<arg>testugurcan@gmail.com</arg>
-</arguments>
-<msg timestamp="20181002 00:18:00.693" level="INFO">Typing text 'testugurcan@gmail.com' into text field '//*[@id="email"]'.</msg>
-<status status="PASS" starttime="20181002 00:18:00.692" endtime="20181002 00:18:03.806"></status>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<doc>Types the given password into text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="password"]</arg>
-<arg>Test1234hb</arg>
-</arguments>
-<msg timestamp="20181002 00:18:03.808" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
-<status status="PASS" starttime="20181002 00:18:03.806" endtime="20181002 00:18:06.933"></status>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="form-login"]/div[4]/button</arg>
-</arguments>
-<msg timestamp="20181002 00:18:06.936" level="INFO">Clicking button '//*[@id="form-login"]/div[4]/button'.</msg>
-<status status="PASS" starttime="20181002 00:18:06.934" endtime="20181002 00:18:12.070"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>//*[@id="myAccount"]/div[1]/a[1]</arg>
-</arguments>
-<status status="PASS" starttime="20181002 00:18:12.070" endtime="20181002 00:18:15.550"></status>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<arguments>
-<arg>//*[@id="myAccount"]/div[1]/a[1]</arg>
-<arg>Ugurcan Test</arg>
-</arguments>
-<msg timestamp="20181002 00:18:17.586" level="INFO">Element '//*[@id="myAccount"]/div[1]/a[1]' contains text 'Ugurcan Test'.</msg>
-<status status="PASS" starttime="20181002 00:18:15.550" endtime="20181002 00:18:17.586"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="productSearch"]</arg>
-<arg>iphone 7 kilif</arg>
-</arguments>
-<msg timestamp="20181002 00:18:17.586" level="INFO">Typing text 'iphone 7 kilif' into text field '//*[@id="productSearch"]'.</msg>
-<status status="PASS" starttime="20181002 00:18:17.586" endtime="20181002 00:18:20.742"></status>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="buttonProductSearch"]</arg>
-</arguments>
-<msg timestamp="20181002 00:18:20.743" level="INFO">Clicking button '//*[@id="buttonProductSearch"]'.</msg>
-<status status="PASS" starttime="20181002 00:18:20.743" endtime="20181002 00:18:29.905"></status>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<doc>Returns value of ``attribute`` from element ``locator``.</doc>
-<arguments>
-<arg>xpath=//*[@class="desktop widget FiltersList"]</arg>
-<arg>id</arg>
-</arguments>
-<assign>
-<var>${id_desktop widget FiltersList}</var>
-</assign>
-<msg timestamp="20181002 00:18:31.928" level="INFO">${id_desktop widget FiltersList} = a536f4d2-b19a-4439-be4e-d1e54c175509</msg>
-<status status="PASS" starttime="20181002 00:18:29.905" endtime="20181002 00:18:31.928"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${id_desktop widget FiltersList}</arg>
-</arguments>
-<msg timestamp="20181002 00:18:31.929" level="INFO">a536f4d2-b19a-4439-be4e-d1e54c175509</msg>
-<status status="PASS" starttime="20181002 00:18:31.928" endtime="20181002 00:18:31.929"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="${id_desktop widget FiltersList}"]/div/ol/li[4]/ol/li[3]/label</arg>
-</arguments>
-<msg timestamp="20181002 00:18:31.929" level="INFO">Clicking element '//*[@id="a536f4d2-b19a-4439-be4e-d1e54c175509"]/div/ol/li[4]/ol/li[3]/label'.</msg>
-<status status="PASS" starttime="20181002 00:18:31.929" endtime="20181002 00:18:38.321"></status>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<doc>Returns value of ``attribute`` from element ``locator``.</doc>
-<arguments>
-<arg>xpath=//*[@class="desktop widget SearchListing"]</arg>
-<arg>id</arg>
-</arguments>
-<assign>
-<var>${id_desktop widget SearchListing}</var>
-</assign>
-<msg timestamp="20181002 00:18:40.345" level="INFO">${id_desktop widget SearchListing} = f3227d49-0de4-479b-a3b1-dba8b1641c38</msg>
-<status status="PASS" starttime="20181002 00:18:38.322" endtime="20181002 00:18:40.345"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${id_desktop widget SearchListing}</arg>
-</arguments>
-<msg timestamp="20181002 00:18:40.346" level="INFO">f3227d49-0de4-479b-a3b1-dba8b1641c38</msg>
-<status status="PASS" starttime="20181002 00:18:40.345" endtime="20181002 00:18:40.346"></status>
-</kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is enabled.</doc>
-<arguments>
-<arg>//*[@id="${id_desktop widget SearchListing}"]/div/div/ul/li[1]/div/a/div/span[2]/button</arg>
-</arguments>
-<status status="PASS" starttime="20181002 00:18:40.346" endtime="20181002 00:18:43.389"></status>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="${id_desktop widget SearchListing}"]/div/div/ul/li[1]/div/a/div/span[2]/button</arg>
-</arguments>
-<msg timestamp="20181002 00:18:43.390" level="INFO">Clicking button '//*[@id="f3227d49-0de4-479b-a3b1-dba8b1641c38"]/div/div/ul/li[1]/div/a/div/span[2]/button'.</msg>
-<status status="PASS" starttime="20181002 00:18:43.389" endtime="20181002 00:18:48.500"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>//*[@id="notification"]</arg>
-</arguments>
-<status status="PASS" starttime="20181002 00:18:48.501" endtime="20181002 00:18:50.534"></status>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<doc>Returns value of ``attribute`` from element ``locator``.</doc>
-<arguments>
-<arg>xpath=//*[@id="${id_desktop widget SearchListing}"]/div/div/ul/li[1]/div/a/div/span[2]/button</arg>
-<arg>data-product</arg>
-</arguments>
-<assign>
-<var>${product1_data}</var>
-</assign>
-<msg timestamp="20181002 00:18:52.555" level="INFO">${product1_data} = {"merchantName":"Hepsiburada","price":"49.90","discountAmount":".00","productName":"Spigen Apple iPhone 8 - iPhone 7 Kılıf Liquid Crystal 4 Tarafı Tam Koruma Crystal Clear - 042CS20435","categoryId":"...</msg>
-<status status="PASS" starttime="20181002 00:18:50.535" endtime="20181002 00:18:52.555"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${product1_data}</arg>
-</arguments>
-<msg timestamp="20181002 00:18:52.556" level="INFO">{"merchantName":"Hepsiburada","price":"49.90","discountAmount":".00","productName":"Spigen Apple iPhone 8 - iPhone 7 Kılıf Liquid Crystal 4 Tarafı Tam Koruma Crystal Clear - 042CS20435","categoryId":"16102","categoryName":"Kılıflar","brandName":"Spigen","productId":"HB0000017OJE","sku":"HBV0000017OJF","listingId":""}</msg>
-<status status="PASS" starttime="20181002 00:18:52.555" endtime="20181002 00:18:52.556"></status>
-</kw>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is enabled.</doc>
-<arguments>
-<arg>//*[@id="${id_desktop widget SearchListing}"]/div/div/ul/li[2]/div/a/div/span[2]/button</arg>
-</arguments>
-<status status="PASS" starttime="20181002 00:18:52.556" endtime="20181002 00:18:55.590"></status>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="${id_desktop widget SearchListing}"]/div/div/ul/li[2]/div/a/div/span[2]/button</arg>
-</arguments>
-<msg timestamp="20181002 00:18:55.593" level="INFO">Clicking button '//*[@id="f3227d49-0de4-479b-a3b1-dba8b1641c38"]/div/div/ul/li[2]/div/a/div/span[2]/button'.</msg>
-<status status="PASS" starttime="20181002 00:18:55.591" endtime="20181002 00:19:00.714"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>//*[@id="notification"]</arg>
-</arguments>
-<status status="PASS" starttime="20181002 00:19:00.714" endtime="20181002 00:19:02.744"></status>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<doc>Returns value of ``attribute`` from element ``locator``.</doc>
-<arguments>
-<arg>xpath=//*[@id="${id_desktop widget SearchListing}"]/div/div/ul/li[2]/div/a/div/span[2]/button</arg>
-<arg>data-product</arg>
-</arguments>
-<assign>
-<var>${product2_data}</var>
-</assign>
-<msg timestamp="20181002 00:19:04.767" level="INFO">${product2_data} = {"merchantName":"Hepsiburada","price":"49.90","discountAmount":".00","productName":"Spigen Apple iPhone 8 Plus - iPhone 7 Plus Kılıf Liquid Crystal 4 Tarafı Tam Koruma Crystal Clear - 043CS20479","cat...</msg>
-<status status="PASS" starttime="20181002 00:19:02.745" endtime="20181002 00:19:04.767"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${product2_data}</arg>
-</arguments>
-<msg timestamp="20181002 00:19:04.768" level="INFO">{"merchantName":"Hepsiburada","price":"49.90","discountAmount":".00","productName":"Spigen Apple iPhone 8 Plus - iPhone 7 Plus Kılıf Liquid Crystal 4 Tarafı Tam Koruma Crystal Clear - 043CS20479","categoryId":"16102","categoryName":"Kılıflar","brandName":"Spigen","productId":"HB0000017JWM","sku":"HBV0000017JWN","listingId":""}</msg>
-<status status="PASS" starttime="20181002 00:19:04.767" endtime="20181002 00:19:04.768"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>//*[@id="CartButton"]</arg>
-</arguments>
-<status status="PASS" starttime="20181002 00:19:04.768" endtime="20181002 00:19:06.794"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="CartButton"]</arg>
-</arguments>
-<msg timestamp="20181002 00:19:06.795" level="INFO">Clicking element '//*[@id="CartButton"]'.</msg>
-<status status="PASS" starttime="20181002 00:19:06.794" endtime="20181002 00:19:09.910"></status>
-</kw>
-<kw name="Location Should Be" library="SeleniumLibrary">
-<doc>Verifies that current URL is exactly ``url`.</doc>
-<arguments>
-<arg>https://www.hepsiburada.com/ayagina-gelsin/sepetim</arg>
-</arguments>
-<msg timestamp="20181002 00:19:10.943" level="INFO">Current location is 'https://www.hepsiburada.com/ayagina-gelsin/sepetim'.</msg>
-<status status="PASS" starttime="20181002 00:19:09.910" endtime="20181002 00:19:10.943"></status>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<doc>Returns value of ``attribute`` from element ``locator``.</doc>
-<arguments>
-<arg>//*[@id="form-item-list"]/ul/li[1]/div/div[1]/h4/a</arg>
-<arg>text</arg>
-</arguments>
-<assign>
-<var>${product1_name}</var>
-</assign>
-<msg timestamp="20181002 00:19:12.964" level="INFO">${product1_name} = Spigen Apple iPhone 8 - iPhone 7 Kılıf Liquid Crystal 4 Tarafı Tam Koruma Crystal Clear - 042CS20435</msg>
-<status status="PASS" starttime="20181002 00:19:10.943" endtime="20181002 00:19:12.964"></status>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<doc>Returns value of ``attribute`` from element ``locator``.</doc>
-<arguments>
-<arg>//*[@id="form-item-list"]/ul/li[2]/div/div[1]/h4/a</arg>
-<arg>text</arg>
-</arguments>
-<assign>
-<var>${product2_name}</var>
-</assign>
-<msg timestamp="20181002 00:19:14.985" level="INFO">${product2_name} = Spigen Apple iPhone 8 Plus - iPhone 7 Plus Kılıf Liquid Crystal 4 Tarafı Tam Koruma Crystal Clear - 043CS20479</msg>
-<status status="PASS" starttime="20181002 00:19:12.964" endtime="20181002 00:19:14.985"></status>
-</kw>
-<kw name="Should Contain" library="BuiltIn">
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<arguments>
-<arg>${product1_data}</arg>
-<arg>${product1_name}</arg>
-</arguments>
-<status status="PASS" starttime="20181002 00:19:14.985" endtime="20181002 00:19:14.986"></status>
-</kw>
-<kw name="Should Contain" library="BuiltIn">
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<arguments>
-<arg>${product2_data}</arg>
-<arg>${product2_name}</arg>
-</arguments>
-<status status="PASS" starttime="20181002 00:19:14.986" endtime="20181002 00:19:14.986"></status>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<doc>Clicks button identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="short-summary"]/div[1]/div[2]/button</arg>
-</arguments>
-<msg timestamp="20181002 00:19:14.987" level="INFO">Clicking button '//*[@id="short-summary"]/div[1]/div[2]/button'.</msg>
-<status status="PASS" starttime="20181002 00:19:14.986" endtime="20181002 00:19:20.088"></status>
-</kw>
-<kw name="Location Should Be" library="SeleniumLibrary">
-<doc>Verifies that current URL is exactly ``url`.</doc>
-<arguments>
-<arg>https://www.hepsiburada.com/ayagina-gelsin/teslimat</arg>
-</arguments>
-<msg timestamp="20181002 00:19:21.096" level="INFO">Current location is 'https://www.hepsiburada.com/ayagina-gelsin/teslimat'.</msg>
-<status status="PASS" starttime="20181002 00:19:20.088" endtime="20181002 00:19:21.096"></status>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<doc>Waits until element ``locator`` is visible.</doc>
-<arguments>
-<arg>//*[@id="checkout-container"]</arg>
-</arguments>
-<status status="PASS" starttime="20181002 00:19:21.096" endtime="20181002 00:19:23.331"></status>
-</kw>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<arguments>
-<arg>Element Should Be Visible</arg>
-<arg>//*[@id="first-name"]</arg>
-</arguments>
-<assign>
-<var>${present}</var>
-</assign>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<arguments>
-<arg>//*[@id="first-name"]</arg>
-</arguments>
+<msg timestamp="20181002 23:00:00.010" level="INFO">Clicking element '//*[@id="myAccount"]'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181002 00:19:25.632" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181002 00:19:24.346" endtime="20181002 00:19:25.632"></status>
+<msg timestamp="20181002 23:00:12.031" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20181002 23:00:06.022" endtime="20181002 23:00:12.031"></status>
 </kw>
-<msg timestamp="20181002 00:19:25.634" level="FAIL">Element with locator '//*[@id="first-name"]' not found.</msg>
-<status status="FAIL" starttime="20181002 00:19:23.332" endtime="20181002 00:19:25.634"></status>
+<msg timestamp="20181002 23:00:12.032" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181002 23:00:12.033" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20181002 23:00:00.009" endtime="20181002 23:00:12.033"></status>
 </kw>
-<msg timestamp="20181002 00:19:25.635" level="INFO">${present} = False</msg>
-<status status="PASS" starttime="20181002 00:19:23.331" endtime="20181002 00:19:25.635"></status>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<arguments>
-<arg>${present}</arg>
-<arg>Add Address For the First Time</arg>
-</arguments>
-<status status="PASS" starttime="20181002 00:19:25.635" endtime="20181002 00:19:25.635"></status>
-</kw>
-<kw name="Run Keyword Unless" library="BuiltIn">
-<doc>Runs the given keyword with the given arguments, if ``condition`` is false.</doc>
-<arguments>
-<arg>${present}</arg>
-<arg>Choose Address</arg>
-</arguments>
-<kw name="Choose Address">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@id="addresses"]/div/div[1]/div/div[1]/span</arg>
-</arguments>
-<msg timestamp="20181002 00:19:25.636" level="INFO">Clicking element '//*[@id="addresses"]/div/div[1]/div/div[1]/span'.</msg>
-<status status="PASS" starttime="20181002 00:19:25.636" endtime="20181002 00:19:27.719"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>text='Evim'</arg>
-</arguments>
-<msg timestamp="20181002 00:19:27.719" level="INFO">Clicking element 'text='Evim''.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20181002 00:19:30.005" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181002 00:19:28.733" endtime="20181002 00:19:30.005"></status>
-</kw>
-<msg timestamp="20181002 00:19:30.006" level="FAIL">Element with locator 'text='Evim'' not found.</msg>
-<status status="FAIL" starttime="20181002 00:19:27.719" endtime="20181002 00:19:30.006"></status>
-</kw>
-<status status="FAIL" starttime="20181002 00:19:25.636" endtime="20181002 00:19:30.007"></status>
-</kw>
-<status status="FAIL" starttime="20181002 00:19:25.635" endtime="20181002 00:19:30.007"></status>
+<status status="FAIL" starttime="20181002 22:59:57.960" endtime="20181002 23:00:12.034"></status>
 </kw>
 <kw name="Run Keyword If Test Failed" library="BuiltIn" type="teardown">
 <doc>Runs the given keyword with the given arguments, if the test failed.</doc>
@@ -475,33 +141,60 @@
 <arguments>
 <arg>${outputdir}</arg>
 </arguments>
-<msg timestamp="20181002 00:19:30.009" level="INFO" html="yes">Created directory '&lt;a href="file://C:\eclipse-workspace\Hepsiburada\02-10-2018 00-17"&gt;C:\eclipse-workspace\Hepsiburada\02-10-2018 00-17&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20181002 00:19:30.008" endtime="20181002 00:19:30.009"></status>
+<msg timestamp="20181002 23:00:12.035" level="INFO" html="yes">Created directory '&lt;a href="file://C:\eclipse-workspace\Hepsiburada\02-10-2018 22-59"&gt;C:\eclipse-workspace\Hepsiburada\02-10-2018 22-59&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20181002 23:00:12.035" endtime="20181002 23:00:12.036"></status>
 </kw>
 <kw name="Set Screenshot Directory" library="SeleniumLibrary">
 <doc>Sets the directory for captured screenshots.</doc>
 <arguments>
 <arg>${outputdir}</arg>
 </arguments>
-<status status="PASS" starttime="20181002 00:19:30.009" endtime="20181002 00:19:30.010"></status>
+<status status="PASS" starttime="20181002 23:00:12.036" endtime="20181002 23:00:12.036"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
 <arguments>
 <arg>${outputdir}/error.png</arg>
 </arguments>
-<msg timestamp="20181002 00:19:31.279" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="02-10-2018%2000-17/error.png"&gt;&lt;img src="02-10-2018%2000-17/error.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20181002 00:19:30.010" endtime="20181002 00:19:31.279"></status>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181002 23:00:24.063" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20181002 23:00:18.056" endtime="20181002 23:00:24.063"></status>
 </kw>
-<status status="PASS" starttime="20181002 00:19:30.008" endtime="20181002 00:19:31.279"></status>
+<msg timestamp="20181002 23:00:24.064" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181002 23:00:24.065" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<status status="FAIL" starttime="20181002 23:00:12.037" endtime="20181002 23:00:24.065"></status>
 </kw>
-<status status="PASS" starttime="20181002 00:19:30.007" endtime="20181002 00:19:31.280"></status>
+<status status="FAIL" starttime="20181002 23:00:12.035" endtime="20181002 23:00:24.065"></status>
 </kw>
-<status status="FAIL" starttime="20181002 00:17:37.381" endtime="20181002 00:19:31.280" critical="yes">Element with locator 'text='Evim'' not found.</status>
+<status status="FAIL" starttime="20181002 23:00:12.034" endtime="20181002 23:00:24.065">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</status>
+</kw>
+<status status="FAIL" starttime="20181002 22:59:48.346" endtime="20181002 23:00:24.065" critical="yes">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+
+
+Also teardown failed:
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</status>
 </test>
-<status status="FAIL" starttime="20181002 00:17:37.257" endtime="20181002 00:19:31.280"></status>
+<status status="FAIL" starttime="20181002 22:59:48.224" endtime="20181002 23:00:24.066"></status>
 </suite>
-<status status="FAIL" starttime="20181002 00:17:37.228" endtime="20181002 00:19:31.282"></status>
+<status status="FAIL" starttime="20181002 22:59:48.207" endtime="20181002 23:00:24.067"></status>
 </suite>
 <statistics>
 <total>
@@ -516,5 +209,13 @@
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20181002 23:00:12.032" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
+<msg timestamp="20181002 23:00:24.064" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64)
+</msg>
 </errors>
 </robot>

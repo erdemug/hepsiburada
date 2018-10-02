@@ -1,0 +1,7 @@
+*** Variables ***
+${url}    https://www.hepsiburada.com/
+${browser}    chrome
+${email}    testugurcan@gmail.com     
+${password}    Test1234hb    
+${user_fullname}    Ugurcan Test
+${search}    iphone 7 kilif
